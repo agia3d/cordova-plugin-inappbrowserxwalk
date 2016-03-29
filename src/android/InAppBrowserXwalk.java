@@ -105,6 +105,7 @@ public class InAppBrowserXwalk extends CordovaPlugin {
                 int closeButtonSize = 25;
                 String closeButtonColor = "#000000";
                 boolean openHidden = false;
+                boolean hiddenToolbar = true;
 
                 if(data != null && data.length() > 1) {
                     try {
@@ -128,6 +129,9 @@ public class InAppBrowserXwalk extends CordovaPlugin {
                             if(!options.isNull("openHidden")) {
                                 openHidden = options.getBoolean("openHidden");
                             }
+                            if(!options.isNull("hiddenToolbar")) {
+                                hiddenToolbar = options.getBoolean("hiddenToolbar");
+                            }
                         }
                     catch (JSONException ex) {
 
@@ -150,11 +154,11 @@ public class InAppBrowserXwalk extends CordovaPlugin {
                 toolbar.addView(closeButton);
 
                 closeButton.setOnClickListener(new View.OnClickListener() {
-                     public void onClick(View v) {
-                         closeBrowser();
-                     }
-                 });
-
+                    public void onClick(View v) {
+                        closeBrowser();
+                    }
+                });
+                if(!hiddenToolbar)
                 main.addView(toolbar);
                 main.addView(xWalkWebView);
 
