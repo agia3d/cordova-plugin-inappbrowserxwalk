@@ -1,14 +1,21 @@
 {
-    "version": "0.3.3",
-    "name": "cordova-plugin-inappbrowserxwalk",
-    "cordova_name": "InAppBrowser Crosswalk",
+    "name": "xenious-cordova-plugin-inappbrowserxwalk",
+    "version": "1.0.0",
+    "description": "InAppBrowser Crosswalk",
+    "cordova": {
+		"id": "cordova-plugin-inappbrowserxwalk",
+		"platforms": [
+		  "android"
+		]
+	},
     "keywords": [
-			"ecosystem:cordova",
-			"cordova-android"
-        ],
-    "platforms": [
-        "android"
+		"ecosystem:cordova",
+		"cordova-android"
     ],
+    "repository": {
+		"type": "git",
+		"url": "https://github.com/XeniousSoftware/cordova-plugin-inappbrowserxwalk"
+	},
     "engines": [
         {
             "name": "cordova",
