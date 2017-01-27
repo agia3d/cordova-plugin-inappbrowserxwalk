@@ -1,5 +1,5 @@
 {
-    "name": "xenious-cordova-plugin-inappbrowserxwalk",
+    "name": "agia3d-cordova-plugin-inappbrowserxwalk",
     "version": "1.0.0",
     "description": "InAppBrowser Crosswalk",
     "cordova": {
@@ -14,7 +14,7 @@
     ],
     "repository": {
 		"type": "git",
-		"url": "https://github.com/XeniousSoftware/cordova-plugin-inappbrowserxwalk"
+		"url": "https://github.com/agia3d/cordova-plugin-inappbrowserxwalk"
 	},
     "engines": [
         {
